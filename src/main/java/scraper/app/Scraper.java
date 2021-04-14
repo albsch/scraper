@@ -75,6 +75,8 @@ public class Scraper {
     }
 
     public static void main(final String[] args) throws Exception {
+        long startTime = System.currentTimeMillis();
+        System.out.println(startTime);
         System.setProperty("java.util.logging.SimpleFormatter.format", "%4$-1.1s %1$tF %1$tT | %3$s | %5$s %n");
 
         String helpArgs = StringUtil.getArgument(args, "help");
